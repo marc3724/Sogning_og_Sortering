@@ -3,8 +3,9 @@ package Opgaver.Genrate_1000_number;
 
 public class Sort {
 
-    public static void quickSort(int[] list) {
+    public static int[] quickSort(int[] list) {
         quickSort(list, 0, list.length - 1);
+        return list;
     }
 
     private static void quickSort(int[] list, int first, int last) {

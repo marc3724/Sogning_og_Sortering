@@ -1,7 +1,5 @@
 package Opgaver.Genrate_1000_number;
 
-import java.util.Arrays;
-
 public class GenrateNumbers {
 
     public static int[] GenrateNumber(){

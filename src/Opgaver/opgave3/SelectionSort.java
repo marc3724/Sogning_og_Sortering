@@ -1,14 +1,14 @@
-package Opgaver.Genrate_1000_number;
+package Opgaver.opgave3;
 
 public class SelectionSort {
-    public static void selectionSort(double[] list) {
+    public static void selectionSort(Person[] list) {
         for (int i = 0; i < list.length - 1; i++) {
             // Find the minimum in the list[i..list.length-1]
-            double currentMin = list[i];
+            Person currentMin = list[i];
             int currentMinIndex = i;
 
             for (int j = i + 1; j < list.length; j++) {
-                if (currentMin > list[j]) {
+                if (currentMin.compareTo(list[j]) > 0 ) {
                     currentMin = list[j];
                     currentMinIndex = j;
                 }
@@ -20,12 +20,5 @@ public class SelectionSort {
                 list[i] = currentMin;
             }
         }
-    }
-
-    public static void main(String[] args) {
-        double[] list = {-2, 4.5, 5, 1, 2, -3.3};
-        selectionSort(list);
-        for (int i = 0; i < list.length; i++)
-            System.out.print(list[i] + " ");
     }
 }
